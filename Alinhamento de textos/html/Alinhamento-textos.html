@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <title>Bootstrap - Alinhamento de Textos</title>
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px;">
+
+    <!-- Páragrafo justificado -->
+    <p class="text-justify">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Duis laoreet in lorem vitae blandit. Proin eget dictum nisi.
+        Donec laoreet sodales magna, in dignissim dui blandit nec.
+        Curabitur non vehicula turpis. Praesent diam mauris,
+        cursus eget libero nec, vehicula gravida arcu. Cras ex enim,
+        imperdiet sit amet consectetur in, pretium non neque.
+        Nullam tincidunt erat libero, vel vestibulum sapien ultrices id.
+        Fusce id vehicula libero, efficitur tristique sapien. 
+    </p>
+    <!--
+        Alinamento responsivo - 
+        class-text-<tela>-<alinhamento>
+            tela:sm, md, lg ,xl
+            alinhamentoi:left,center,right
+    -->
+    <br>
+    <br>
+
+    <p class="text-sm-center">tela &gt;= 576px</p><!--Small-->
+    <p class="text-md-center">tela &gt;= 768px</p><!--Medium-->
+    <p class="text-lg-center">tela &gt;= 992px</p><!--Large-->
+    <p class="text-xl-center">tela &gt;= 1200px</p><!--Extra Large-->
+
+    <br>
+    <br>
+
+    <!-- Elemento Block para inline-->
+    <h1 class="bg-success d-inline">Loren ipsum dolor</h1>
+    <p class="bg-success d-inline">
+      Loren ipsum dolor efLoren ipsum dolor
+      dolor sit amet, consectetur
+    </p>
+    
+    <br>
+    <br>
+
+    <!-- Elemento inLine para Block-->
+    <span class="bg-success d-block">Loren ipsum dolor 1</span>
+    
+    <br>
+    <span class="bg-success d-block">Loren ipsum dolor 2</span>
+    
+    <br>
+    <br>
+
+    <!--inline-Block-->
+    <div class="bg-warning">
+      <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
+      <h3 class="bg-success d-lg-inline-block" style="margin-top: 50px; width: 400px;">lorem ipsun dolor</h3>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
