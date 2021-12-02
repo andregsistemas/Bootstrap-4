@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Bootstrap - Sistemas de grids</title>
+        <title>Bootstrap - Alinhamentos de grids</title>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -19,11 +19,15 @@
             .marcador{
                 background: #FE9D9D;
                 border: 1px solid #F94646;
+                height: 120px;
             }
 
             .marcador-container{
                 background: #5BF946;
                 border: 1px solid #36ae26;
+            }
+            .borda{
+                border: 1px solid blue;
             }
         </style>
 
@@ -31,77 +35,45 @@
 
     <body style="margin-bottom: 200px; padding: 16px">
 
-        <div class="container marcador-container">
+        <h2>Alinhamento vertical (align-items-ALINHAMENTO: start, center, end)</h2>
 
-            <h2>Largura fixa</h2>
+        <div class="row marcador align-items-center">
+            <div class="col borda">Área 1</div>
+            <div class="col borda">Área 2</div>
+            <div class="col borda">Área 3</div>
+        </div>
 
-                <div class="row">
+        <h2>Alinhamento vertical individual (align-self-ALINHAMENTO: start, center, end)</h2>
 
-                    <div class="marcador col">área 1</div>
-                    <div class="marcador col">área 2</div>
-                    <div class="marcador col">área 3</div>
-                    <div class="marcador col">área 4</div>
+        <div class="row marcador">
+            <div class="col borda align-self-start">Área 1</div>
+            <div class="col borda align-self-center">Área 2</div>
+            <div class="col borda align-self-end">Área 3</div>
+        </div>
 
-                </div>
+        <h2>Alinhamento horizontal colunas (justify-content-ALINHAMENTO: start, center, end)</h2>
 
-            <h2>Largura automática (uto-layout)</h2>
+        <div class="row justify-content-end">
+            <div class="marcador col-2">Área 1</div>
+            <div class="marcador col-2">Área 2</div>
+            <div class="marcador col-2">Área 3</div>
+        </div>
 
-            <div class="row">
+        <h2>Distrinuição (justify-content-ALINHAMENTO: around, between, end)</h2>
 
-                <div class="marcador col-2">área 1</div>
-                <div class="marcador col-4">área 2</div>
-                <div class="marcador col-6">área 3</div>
+        <div class="row justify-content-around">
+            <div class="marcador col-2">Área 1</div>
+            <div class="marcador col-2">Área 2</div>
+            <div class="marcador col-2">Área 3</div>
+            <div class="marcador col-2">Área 4</div>
+        </div>
 
-            </div>
+        <h2>Removendo espaçamento</h2>
 
-            <h2>Largura igual empilhada</h2>
-
-            <div class="row">
-
-                <div class="marcador col-sm">área 1</div>
-                <div class="marcador col-sm">área 2</div>
-                <div class="marcador col-sm">área 3</div>
-
-            </div>
-
-            <h2>Ordenando</h2>
-
-            <div class="row">
-
-                <div class="marcador col-md-4 order-3">área 1</div>
-                <div class="marcador col-md-4 order-2">área 2</div>
-                <div class="marcador col-md-4 order-1">área 3</div>
-
-            </div>
-
-            <h2>Offset</h2>
-
-            <div class="row">
-
-                <div class="marcador col-md-6 offset-md-3">Login</div>
-
-            </div>
-
-            <h2>Offset Multiplos Alinhamentos</h2>
-            <div class="row">
-
-                <div class="marcador col-md-3 offset-md-3">Conteúdo 1</div>
-                <div class="marcador col-md-3 offset-md">Conteúdo 2</div>
-
-            </div>
-
-            <h2>Aninhamentos</h2>
-
-            <div class="row">
-                <div class="col-md-6" style="border: 1px solid blue">
-                    col-md-6
-                    <div class="row">
-                        <div class="col-md-6 marcador">Conteúdo 1</div>
-                        <div class="col-md-4 marcador">Conteúdo 2</div>
-                    </div>
-                </div>
-            </div>
-
+        <div class="row no-gutters justify-content-end">
+            <div class="marcador col-2">Área 1</div>
+            <div class="marcador col-2">Área 2</div>
+            <div class="marcador col-2">Área 3</div>
         </div>
 
         <!-- Optional JavaScript; choose one of the two! -->
